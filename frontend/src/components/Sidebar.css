@@ -1,0 +1,144 @@
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #24382f;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 17px;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 35px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.sidebar-logo {
+  width: 43px;
+  height: 43px;
+  background: #c58b64;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+}
+
+.sidebar-brand h2 {
+  font-size: 17px;
+  letter-spacing: -.5px;
+}
+
+.sidebar-brand span {
+  display: block;
+  color: #a9b7ae;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+
+.sidebar-label {
+  color: #91a398;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 30px 12px 13px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.sidebar-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 12px;
+  border: 0;
+  border-radius: 8px;
+  color: #c4d0c8;
+  background: transparent;
+  text-align: left;
+  font-size: 13px;
+  transition: .2s;
+}
+
+.sidebar-link:hover {
+  background: rgba(255,255,255,.08);
+  color: white;
+}
+
+.sidebar-link.active {
+  background: #c58b64;
+  color: white;
+  font-weight: 700;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  border-top: 1px solid rgba(255,255,255,.12);
+  padding: 20px 8px 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-status {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #5dd59a;
+}
+
+.sidebar-footer strong {
+  display: block;
+  font-size: 12px;
+}
+
+.sidebar-footer span {
+  display: block;
+  color: #a9b7ae;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.sidebar-close,
+.sidebar-backdrop {
+  display: none;
+}
+
+@media(max-width: 850px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform .25s;
+  }
+
+  .sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-close {
+    display: block;
+    margin-left: auto;
+    color: white;
+    background: transparent;
+    border: none;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 19;
+  }
+}

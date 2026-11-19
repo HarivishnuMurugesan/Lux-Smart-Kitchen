@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #25251f;
+  background: #faf9f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.admin-layout {
+  min-height: 100vh;
+}
+
+.admin-main {
+  margin-left: 260px;
+  min-height: 100vh;
+  background: #f7f6f2;
+}
+
+.admin-content {
+  padding: 30px 35px;
+  min-height: calc(100vh - 85px);
+}
+
+.coming-soon {
+  background: white;
+  border: 1px solid #eae8e2;
+  border-radius: 12px;
+  padding: 35px;
+  min-height: 250px;
+}
+
+.coming-soon h2 {
+  color: #293b31;
+  margin-bottom: 10px;
+}
+
+.coming-soon p {
+  color: #858178;
+  font-size: 14px;
+}
+
+@media(max-width: 850px) {
+  .admin-main {
+    margin-left: 0;
+  }
+
+  .admin-content {
+    padding: 20px 16px;
+  }
+}

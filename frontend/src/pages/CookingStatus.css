@@ -1,0 +1,284 @@
+
+.cooking-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cooking-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.cooking-eyebrow {
+  color: #bd7950;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.cooking-heading h1 {
+  color: #293b31;
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.cooking-heading p {
+  color: #89867e;
+  font-size: 13px;
+}
+
+.cooking-refresh {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: white;
+  border: 1px solid #e7e3db;
+  border-radius: 8px;
+  color: #293b31;
+  font-weight: 600;
+}
+
+.cooking-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.cooking-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  background: white;
+  border: 1px solid #ebe8e1;
+  border-radius: 10px;
+}
+
+.summary-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cooking-summary-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cooking-summary-card span:not(.summary-dot) {
+  color: #858178;
+  font-size: 11px;
+}
+
+.cooking-summary-card strong {
+  color: #293b31;
+  font-size: 22px;
+}
+
+.cooking-columns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(210px, 1fr));
+  gap: 16px;
+  align-items: start;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.cooking-column {
+  background: #eeede8;
+  padding: 13px;
+  border-radius: 11px;
+  min-height: 280px;
+}
+
+.cooking-column-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 3px 15px;
+}
+
+.cooking-column-heading div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.cooking-column-heading h2 {
+  font-size: 13px;
+  color: #344238;
+}
+
+.column-count {
+  background: white;
+  color: #65645e;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.cooking-order-card {
+  background: white;
+  border: 1px solid #e8e5de;
+  border-radius: 9px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.order-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-card-top strong {
+  color: #293b31;
+  font-size: 13px;
+}
+
+.priority-tag {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 5px 7px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.priority-tag.urgent {
+  background: #ffebea;
+  color: #c3443e;
+}
+
+.priority-tag.high {
+  background: #fff2df;
+  color: #b27a27;
+}
+
+.priority-tag.normal {
+  background: #edf1ed;
+  color: #637567;
+}
+
+.cooking-order-card h3 {
+  font-size: 15px;
+  color: #293b31;
+  margin-top: 14px;
+}
+
+.table-number {
+  color: #888;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.order-food-list {
+  margin: 14px 0;
+  padding: 11px 0;
+  border-top: 1px solid #f0eee9;
+  border-bottom: 1px solid #f0eee9;
+}
+
+.order-food-list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 11px;
+  color: #666;
+}
+
+.order-food-list strong {
+  color: #293b31;
+}
+
+.order-time {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: #89867e;
+}
+
+.cooking-action {
+  width: 100%;
+  margin-top: 16px;
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 7px;
+  background: #293b31;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cooking-action:disabled {
+  opacity: .5;
+  cursor: wait;
+}
+
+.served-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #399b72;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.empty-column {
+  text-align: center;
+  color: #999;
+  font-size: 11px;
+  padding: 35px 5px;
+  background: rgba(255,255,255,.5);
+  border-radius: 8px;
+}
+
+.cooking-footer-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  font-size: 11px;
+}
+
+.cooking-error {
+  background: #fff0ed;
+  color: #a63830;
+  padding: 13px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.cooking-message {
+  color: #888;
+  padding: 25px;
+}
+
+@media(max-width: 900px) {
+  .cooking-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 550px) {
+  .cooking-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cooking-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+}
